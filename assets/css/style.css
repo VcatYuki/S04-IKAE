@@ -10,3 +10,25 @@
 .bmenu {
     visibility: hidden;
 }
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+.logo {
+    width: 10%;
+    height: 10%;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+a {    
+    text-decoration: none;
+    color: #B2B2B2;
+    align-self: center;
+    font-size: bold;
+}
+a:hover {
+    color: #4A4A4A;
+}
