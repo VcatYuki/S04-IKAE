@@ -1,12 +1,13 @@
 @font-face {
     font-family: Avenir;
-    src: url("/S04-IKAE/assets/font/AvenirLTStd-Book.otf")
+    src: url("/S04-IKAE/assets/font/AvenirLTStd-Roman.otf")
 }
 
 *{
     font-family: Avenir;
+    background-color: #F3F3F3;
 }
-
+/*Menu*/
 .bmenu {
     visibility: hidden;
 }
@@ -27,8 +28,132 @@ a {
     text-decoration: none;
     color: #B2B2B2;
     align-self: center;
-    font-size: bold;
+    font-size: bold;   
+}
+a img {
+    width: 30%;
 }
 a:hover {
     color: #4A4A4A;
+}
+/*header*/
+header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 700px;
+    overflow: hidden;
+}
+h1{
+    position: absolute;
+    top: 25%;
+    background: transparent;
+    height: 120px;
+    max-width: 1920px;
+    font-size: 100px;
+}
+header img {
+    width: 100%;
+    max-width: 1920px;
+    object-fit:cover;
+    object-position: 0% 100%;
+}
+
+/*section about us*/
+.about_us {
+    padding-left: 10%;    
+    max-width: 1240px;
+    display: flex;
+    flex-direction: column;
+}
+.articles {
+    display: flex;
+    flex-direction: row;
+    height: 400px;
+    justify-content: space-evenly;
+
+}
+article {       
+    height: 400px;
+}
+.text {
+    margin: 1%;
+    font-size: 20px;
+    width: 33%;
+}
+h3 {
+    color: #9B9B9B;
+}
+
+.icon {
+    height: 5vh;
+}
+.about {
+    width: 33%;
+}
+
+
+/*Categories*/
+.categories {
+    display: flex;
+    max-width: 1920px;
+    flex-direction: column;
+    overflow: hidden;
+}
+.images {
+    display: flex;
+    flex-direction: row;
+    position: relative; 
+}
+.zooming {
+    position: relative;      
+    height: 700px;
+    width: 300px;
+}
+.cat {
+    object-fit:cover;    
+    width: 25vw;  
+    height: 700px;
+    z-index: 0;
+    
+}
+.cat:hover {
+    z-index: 2;
+}
+
+.opacity {
+    position: absolute;
+    width: 25vw;  
+    height: 700px; 
+    background-color: black;
+    opacity: 0.3;
+}
+
+.visibility:hover {
+    opacity:0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+#bath {
+    object-position: 90% 100%;
+}
+#liv {
+    object-position: 30% 100%;
+}
+
+h4 {
+    z-index: 1;
+    position: absolute;
+    background: transparent;
+    margin-left: 5vw;
+    top: 250px;
+    justify-self: center;
+    color: #f3f3f3;
+    font-size:50px;    
+    opacity: 1;
+}
+/*footer*/
+footer {
+    color: #9B9B9B;
+    padding-left: 45%;
 }
